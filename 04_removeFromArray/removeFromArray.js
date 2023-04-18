@@ -1,10 +1,12 @@
 const removeFromArray = function(arr, item) {
     for(let i=0; i<arr.length; i++) {
         if(arr[i] === item){
-            delete arr[i];
+            const x = arr.splice(i,1);
         }
     }
-    return arr;
+    for(let j=0; j<arr.length; j++) {
+        return arr;
+    }
 };
 
 // Do not edit below this line
