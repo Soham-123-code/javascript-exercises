@@ -4,6 +4,7 @@ const removeFromArray = function(arr, item) {
             delete arr[i];
         }
     }
+    return arr;
 };
 
 // Do not edit below this line
