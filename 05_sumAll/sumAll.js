@@ -1,7 +1,7 @@
 const sumAll = function(base, range) {
     var sum=0;
-    for(i=range; i!=base; --i) {
-        sum+=range;
+    for(i=base; i<=range; i++) {
+        sum+=i;
     }
     return sum;
 };
