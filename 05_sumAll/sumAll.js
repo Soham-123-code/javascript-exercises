@@ -3,6 +3,9 @@ const sumAll = function(base, range) {
     if(base<0 || range<0){
         return "ERROR"
     }
+    else if(typeof(base)!=Number){
+        return "ERROR"
+    }
     else {
         if(base<range){
             for(i=base; i<=range; i++) {
