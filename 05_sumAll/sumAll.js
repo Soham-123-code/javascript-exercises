@@ -1,9 +1,9 @@
 const sumAll = function(base, range) {
     var sum=0;
-    if(base<0 || range<0){
+    if(!Number.isInteger(base)||!Number.isInteger(range)){
         return "ERROR"
     }
-    if(typeof(base)!=Number||typeof(range)!=Number){
+    if(base<0 || range<0){
         return "ERROR"
     }
     if(base<range){
