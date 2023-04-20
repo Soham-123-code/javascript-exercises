@@ -1,5 +1,5 @@
 const removeFromArray = function(arr, ...args) {
-    return arr.filter(item => !includes(item))
+    return arr.filter(item => !args.includes(item))
     /*for(let i=0; i<arr.length; i++) {
         if(arr[i] === item){
             const x = arr.splice(i,1);
