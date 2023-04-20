@@ -1,6 +1,6 @@
 const sumAll = function(base, range) {
     var sum=0;
-    for(i=range; i!=base; i--) {
+    for(i=range; i!=base; --i) {
         sum+=range;
     }
     return sum;
