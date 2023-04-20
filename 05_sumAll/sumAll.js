@@ -7,14 +7,13 @@ const sumAll = function(base, range) {
         return "ERROR"
     }
     if(base<range){
-           for(i=base; i<=range; i++) {
-                sum+=i;
-            }
+        for(i=base; i<=range; i++) {
+            sum+=i;
+        }
     }
     else if(base>range){
         for(i=range; i<=base; i++){
-                sum+=i;
-            }
+            sum+=i;
         }
     }
     return sum;
