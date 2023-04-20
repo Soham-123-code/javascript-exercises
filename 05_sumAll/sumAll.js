@@ -3,17 +3,16 @@ const sumAll = function(base, range) {
     if(base<0 || range<0){
         return "ERROR"
     }
-    else if(typeof(base)!=Number||typeof(range)!=Number){
+    if(typeof(base)!=Number||typeof(range)!=Number){
         return "ERROR"
     }
-    else {
-        if(base<range){
-            for(i=base; i<=range; i++) {
+    if(base<range){
+           for(i=base; i<=range; i++) {
                 sum+=i;
             }
-        }
-        else if(base>range){
-            for(i=range; i<=base; i++){
+    }
+    else if(base>range){
+        for(i=range; i<=base; i++){
                 sum+=i;
             }
         }
