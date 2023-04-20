@@ -1,6 +1,6 @@
 const convertToCelsius = function(f) {
   var c = (f-32)*0.55;
-  return c.toFixed(1);
+  return (Math.round(c * 10) / 10).toFixed(1)
 };
 
 const convertToFahrenheit = function(c) {
