@@ -3,7 +3,7 @@ const sumAll = function(base, range) {
     if(base<0 || range<0){
         return "ERROR"
     }
-    else if(typeof(base)!=Number){
+    else if(typeof(base)!=Number||typeof(range)!=Number){
         return "ERROR"
     }
     else {
