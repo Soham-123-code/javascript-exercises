@@ -1,5 +1,5 @@
 const convertToCelsius = function(f) {
-  var c = (f-32)*0.55;
+  var c = (f-32)*(5/9);
   if(c===0.0){
     return 0
   }
