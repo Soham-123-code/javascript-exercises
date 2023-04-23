@@ -18,7 +18,8 @@ const sum = function(arr) {
 };
 
 const multiply = function(a,b) {
-  return a*b
+  let c=a*b
+  return c
 };
 
 const power = function(a,b) {
