@@ -4,8 +4,8 @@ const convertToCelsius = function(f) {
     return 0
   }
   else{
-    c = (Math.round(c * 10) / 10).toFixed(1)  
-    return parseInt(c)
+    return parseFloat((Math.round(c * 10) / 10).toFixed(1))  
+    
   }
 };
 
