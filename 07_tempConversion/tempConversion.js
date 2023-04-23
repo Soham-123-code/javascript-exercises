@@ -10,8 +10,13 @@ const convertToCelsius = function(f) {
 };
 
 const convertToFahrenheit = function(c) {
-  var f = (c/0.55)+32;
-  return f.toFixed(1);
+  var f = (c*(9/5))+32;
+  if(f===0.0){
+    return 0;
+  }
+  else{
+    return parseFloat((Math.round(f*10)/10).toFixed(1))
+  }
 };
 
 // Do not edit below this line
