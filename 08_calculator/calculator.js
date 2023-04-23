@@ -17,9 +17,12 @@ const sum = function(arr) {
   return sum
 };
 
-const multiply = function(a,b) {
-  let c=a*b
-  return parseInt(c)
+const multiply = function(arr) {
+  let prod = 0
+  for(let i=0; i<arr.length; i++){
+    prod+=arr[i]*arr[i+1]
+  }
+  return prod
 };
 
 const power = function(a,b) {
