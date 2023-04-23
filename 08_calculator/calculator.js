@@ -18,11 +18,14 @@ const sum = function(arr) {
 };
 
 const multiply = function(arr) {
-  let prod = 0
-  for(let i=0; i<arr.length; i++){
-    prod+=arr[i]*arr[i+1]
+  if(arr.length===0){
+    return 0
   }
-  return prod
+  else{
+    return arr.reduce(
+      (accumulator, currentValue) => accumulator*currentValue
+    )
+  }
 };
 
 const power = function(a,b) {
