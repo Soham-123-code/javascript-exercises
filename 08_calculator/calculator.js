@@ -19,7 +19,7 @@ const sum = function(arr) {
 
 const multiply = function(a,b) {
   let c=a*b
-  return c
+  return parseInt(c)
 };
 
 const power = function(a,b) {
