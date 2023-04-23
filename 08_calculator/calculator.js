@@ -8,6 +8,9 @@ const subtract = function(a,b) {
 
 const sum = function(arr) {
 	let sum=0
+  if(arr === ['']){
+    return 0;
+  }
   for(let i=0; i<arr.length; i++){
     sum+=arr[i]
   }
